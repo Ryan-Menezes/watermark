@@ -1,0 +1,111 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../imgs/background.jpg');
+    background-size: cover;
+}
+
+.form-label {
+    font-size: 14px;
+}
+
+.btn {
+    text-transform: uppercase;
+    padding: 10px 40px;
+    width: 100%;
+    background-color: #4D90FE;
+    color: #fff;
+    border: 4px solid #4D90FE;
+    border-radius: 50px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition-duration: 0.5s;
+}
+
+.btn:hover {
+    background-color: #fff;
+    border: 4px solid #4D90FE;
+    color: #4D90FE;
+    padding: 10px 30px;
+}
+
+.form-watermark {
+    background-color: #fff;
+    width: 800px;
+    padding: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+}
+
+.form-options {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.form-options label:last-child {
+    grid-column: 1/4;
+}
+
+.form-options label div {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    min-height: 100px;
+    cursor: pointer;
+}
+
+.form-options label div.top-left {
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.form-options label div.top-right {
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.form-options label div.bottom-left {
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.form-options label div.bottom-right {
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.form-options label div.grid {
+    font-size: 80px;
+}
+
+.form-options input[type=radio]:checked~div {
+    outline: 4px solid #4D90FE;
+}
+
+.form-options input[type=radio] {
+    display: none;
+}
+
+.form-inputs {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
